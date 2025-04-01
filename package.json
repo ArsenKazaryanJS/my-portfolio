@@ -1,5 +1,6 @@
 {
   "name": "my-portfolio-web-site",
+  "homepage": "https://arsenkazaryanjs.github.io/my-portfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +8,8 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.8.4",
+    "emailjs-com": "^3.2.0",
     "gh-pages": "^6.3.0",
     "lucide-react": "^0.482.0",
     "react": "^19.0.0",
@@ -18,11 +21,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "prodeploy":"npm run build",
+    "deploy": "gh-pages -d build",
+    "prodeploy": "npm run build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy":"gh-pages -d dist"
-
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
